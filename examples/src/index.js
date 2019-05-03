@@ -95,6 +95,7 @@ const Demo = ({ content, toastManager }) => (
   <Button onClick={() => toastManager.add(content, {
     appearance: '${appearance}',
     autoDismiss: ${autoDismiss},
+    pauseOnHover: ${pauseOnHover},
   })}>
     Add Toast
   </Button>
@@ -148,6 +149,7 @@ const appearances = [
   { value: 'success', label: 'Success' },
   { value: 'error', label: 'Error' },
   { value: 'warning', label: 'Warning' },
+  { value: 'info', label: 'Info' },
 ];
 const codeStyles = [
   { value: 'hoc', label: 'Use HOC' },
